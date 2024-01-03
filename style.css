@@ -1,6 +1,6 @@
 body {
   /* background-color: rgb(177, 56, 56); */
-  
+
   color: white;
   height: 100%;
 }
@@ -32,12 +32,11 @@ marquee {
   gap: 1rem;
   text-align: center;
   flex-wrap: wrap;
-  
 }
 
-.picture{
-    background-color: rgb(60, 60, 77);
-    padding: 0 1rem;
+.picture {
+  background-color: rgb(60, 60, 77);
+  padding: 0 1rem;
 }
 .logo {
   font-size: 4rem;
@@ -45,9 +44,9 @@ marquee {
 li:hover {
   color: rgb(152, 171, 152);
 }
-.skills{
-    background-color: rgba(36, 35, 35, 0.8);
-    padding: 0 1rem;
+.skills {
+  background-color: rgba(36, 35, 35, 0.8);
+  padding: 0 1rem;
 }
 .skills h2 {
   text-align: center;
@@ -62,7 +61,7 @@ li:hover {
 }
 .imgDiv {
   width: 30%;
-  height: 500px;
+  /* height: 500px; */
 }
 footer {
   text-align: center;
@@ -76,28 +75,21 @@ footer {
   overflow: hidden;
 }
 
+@media (max-width: 800px) {
+  nav {
+    flex-direction: column;
+  }
+  .imgDiv {
+    width: 40%;
+  }
+}
 
- @media(max-width:800px) {
-    
-    nav{
-        flex-direction: column;
-    }
-    .imgDiv{
-        width:40%
-    } 
-    
-
-    
- } 
-
-@media(max-width:500px) {
-    .imgDiv{
-        width:100%;
-        margin-top: 1rem;
-    }
-    .picGallery{
-        gap: 0;
-        
-    }
-
+@media (max-width: 500px) {
+  .imgDiv {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .picGallery {
+    gap: 0;
+  }
 }
